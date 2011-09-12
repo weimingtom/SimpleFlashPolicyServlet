@@ -1,0 +1,41 @@
+--------------------------------
+I. HOW TO BUILD & USE
+
+1. Create project
+	$ build/create.sh
+	
+2. Build
+	$ build/compileSWF.sh && build/build.sh
+
+3. Run
+	$ build/run.sh
+
+4. Test
+	http://localhost:8080/my-webapp/
+	Press Key Enter to connect.
+	Switch the varibles in my-webapp\src\main\java\FlashPolicyd.java:
+		private static final boolean enableServer1 = true;
+		private static final boolean enableServer2 = true;
+	and rebuild to close the policyd or echo server.
+	
+--------------------------------	
+II. SOURCE OVERVIEW
+
+1. Servlet setup
+	see my-webapp\src\main\webapp\WEB-INF\web.xml
+	
+2. Flash socket policy file setup
+	see my-webapp\src\main\webapp\WEB-INF\flashpolicy.xml
+
+3. Servlet source
+	see my-webapp\src\main\java\FlashPolicyd.java
+	The code is originally from  
+	http://code.google.com/p/assql/wiki/JavaPolicyFileServer
+	
+4. POM setup
+	see my-webapp\pom.xml
+	
+5. Flash client source
+	see my-webapp\src\main\webapp\SimpleClientSprite.as
+
+--------------------------------
