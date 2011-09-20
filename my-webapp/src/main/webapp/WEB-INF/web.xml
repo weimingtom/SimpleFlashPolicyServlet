@@ -13,9 +13,21 @@
     <servlet-class>FlashPolicyd</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
+  <servlet>
+    <description></description>
+    <display-name>XMLServiceServlet</display-name>
+    <servlet-name>XMLServiceServlet</servlet-name>
+    <servlet-class>XMLServiceServlet</servlet-class>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+  
+  
   <servlet-mapping>
     <servlet-name>FlashPolicyd</servlet-name>
     <url-pattern>/FlashPolicyd</url-pattern>
   </servlet-mapping>
-
+  <servlet-mapping>
+    <servlet-name>XMLServiceServlet</servlet-name>
+    <url-pattern>/XMLServiceServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

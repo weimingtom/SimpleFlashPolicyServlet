@@ -29,8 +29,20 @@
             <scope>provided</scope>
         </dependency>
         
-    
-    
+        <!-- for XMLServiceServlet -->
+        
+		<dependency>
+			<groupId>c3p0</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>0.9.1.2</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.17</version>
+		</dependency>
+
   </dependencies>
   <build>
     <finalName>my-webapp</finalName>
